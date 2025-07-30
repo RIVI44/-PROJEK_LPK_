@@ -147,7 +147,9 @@ class CompoundDatabase:
             'C5H10O2_est5': {'iupac': 'Etil propanoat', 'trivial': 'etil propinoat', 'smiles': 'CCC(=O)OCC', 'group': 'Ester', 'formula_pattern': 'R-COO-R'},
             'C5H10O2_est6': {'iupac': 'Metil butanoat', 'trivial': 'Metil butirat', 'smiles': 'CCCC(=O)OC', 'group': 'Ester', 'formula_pattern': 'R-COO-R'},
             'C6H12O2_est7': {'iupac': 'Etil butanoat', 'trivial': 'Etil butirat', 'smiles': 'CC(=O)OCCC', 'group': 'Ester', 'formula_pattern': 'R-COO-R'},
-            'C5H10O2-est8': {'iupac': 'Propanil etanoat', 'trivial': 'Propanil etanoat', 'smiles': 'CC(=O)OCCC', 'group': 'Ester', 'formula_pattern': 'R-COO-R'},
+            'C5H10O2_est8': {'iupac': 'Propanil etanoat', 'trivial': 'Propanil etanoat', 'smiles': 'CC(=O)OCCC', 'group': 'Ester', 'formula_pattern': 'R-COO-R'},
+            'C9H10O2_est9': {'iupac': 'Benzil asetat', 'trivial': '', 'smiles':'CCCCCCCO(=O)C', 'group':'Ester', 'formula_pattern': 'R-COO-R'},
+            'C10H20O2_est10': {'iupac': 'Oktil etanoat', 'trivial': 'Oktil asetat', 'smiles':'CC(=O)OCCCCCCCC', 'group':'Ester','formula_pattern':'R-COO-R'},                 
             
             # Amines
             'CH5N': {'iupac': 'Metilamin', 'trivial': 'Metilamin', 'smiles': 'CN', 'group': 'Amina primer', 'formula_pattern': 'R-NH2'},
