@@ -110,7 +110,7 @@ class CompoundDatabase:
             'C7H12': {'iupac': 'Heptuna', 'trivial' : ' ', 'smiles': 'C#CCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
             'C8H14': {'iupac': 'Oktuna', 'trivial': ' ', 'smiles': 'C#CCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
             'C9H16': {'iupac': 'Nonuna', 'trivial': ' ', 'smiles': 'C#CCCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
-            'C10H18': {'iupac': 'Dekuna', 'trivial': ' ', 'smiles' 'C#CCCCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C10H18': {'iupac': 'Dekuna', 'trivial': ' ', 'smiles': 'C#CCCCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
             
             # Alcohols
             'CH4OH': {'iupac': 'Metanol', 'trivial': 'Alkohol metil', 'smiles': 'CO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
