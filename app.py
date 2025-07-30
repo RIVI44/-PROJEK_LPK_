@@ -79,28 +79,46 @@ class CompoundDatabase:
         """Load compound data efficiently"""
         return {
             # Alkanes
-            'CH4': {'iupac': 'Metana', 'trivial': 'Metana', 'smiles': 'C', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
-            'C2H6': {'iupac': 'Etana', 'trivial': 'Etana', 'smiles': 'CC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
-            'C3H8': {'iupac': 'Propana', 'trivial': 'Propana', 'smiles': 'CCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
-            'C4H10': {'iupac': 'Butana', 'trivial': 'Butana', 'smiles': 'CCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
-            'C5H12': {'iupac': 'Pentana', 'trivial': 'Pentana', 'smiles': 'CCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
-            'C6H14': {'iupac': 'Heksana', 'trivial': 'Heksana', 'smiles': 'CCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'CH4': {'iupac': 'Metana', 'trivial': ' ' , 'smiles': 'C', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C2H6': {'iupac': 'Etana', 'trivial': ' ' , 'smiles': 'CC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C3H8': {'iupac': 'Propana', 'trivial': ' ' , 'smiles': 'CCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C4H10': {'iupac': 'Butana', 'trivial': ' ' , 'smiles': 'CCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C5H12': {'iupac': 'Pentana', 'trivial': ' ' , 'smiles': 'CCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C6H14': {'iupac': 'Heksana', 'trivial': ' ' , 'smiles': 'CCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C7H16':{'iupac': 'Heptana', 'trivial': '  ' , 'smiles': 'CCCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C8H18':{'iupac': 'Oktana', 'trivial': ' ' , 'smiles': 'CCCCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C9H20':{'iupac': 'Nonana', 'trivial': ' ', 'smiles': 'CCCCCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
+            'C10H22' :{'iupac':'Dekana', 'trivial': ' ', 'smiles': 'CCCCCCCCCC', 'group': 'Alkana', 'formula_pattern': 'CnH2n+2'},
             
             # Alkenes
             'C2H4': {'iupac': 'Etena', 'trivial': 'Etilena', 'smiles': 'C=C', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
             'C3H6': {'iupac': 'Propena', 'trivial': 'Propilena', 'smiles': 'C=CC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
-            'C4H8': {'iupac': 'Butena', 'trivial': 'Butena', 'smiles': 'C=CCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C4H8': {'iupac': 'Butena', 'trivial': 'Butilena', 'smiles': 'C=CCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C5H10': {'iupac': 'Pentena', 'trivial': ' ', 'smiles': 'C=CCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C6H12': {'iupac': 'Heksena', 'trivial': ' ', 'smiles': 'C=CCCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C7H14': {'iupac': 'Heptena', 'trivial': ' ', 'smiles': 'C=CCCCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C8H16': {'iupac': 'Oktena', 'trivial': ' ', 'smiles': 'C=CCCCCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C9H18': {'iupac': 'Nonena', 'trivial': ' ', 'smiles': 'C=CCCCCCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
+            'C10H20':{'iupac': 'Dekena', 'trivial': ' ', 'smiles': 'C=CCCCCCCCC', 'group': 'Alkena', 'formula_pattern': 'CnH2n'},
             
             # Alkynes
             'C2H2': {'iupac': 'Etuna', 'trivial': 'Asetilena', 'smiles': 'C#C', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
             'C3H4': {'iupac': 'Propuna', 'trivial': 'Propuna', 'smiles': 'C#CC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C4H6': {'iupac': 'Butuna', 'trivial': ' ', 'smiles': 'C#CCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C5H8': {'iupac': 'Pentuna', 'trivial': ' ', 'smiles': 'C#CCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C6H10': {'iupac': 'Heksuna', 'trivial': ' ', 'smiles': 'C#CCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C7H12': {'iupac': 'Heptuna', 'trivial' : ' ', 'smiles': 'C#CCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C8H14': {'iupac': 'Oktuna', 'trivial': ' ', 'smiles': 'C#CCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C9H16': {'iupac': 'Nonuna', 'trivial': ' ', 'smiles': 'C#CCCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
+            'C10H18': {'iupac': 'Dekuna', 'trivial': ' ', 'smiles' 'C#CCCCCCCCC', 'group': 'Alkuna', 'formula_pattern': 'CnH2n-2'},
             
             # Alcohols
-            'CH4O': {'iupac': 'Metanol', 'trivial': 'Alkohol metil', 'smiles': 'CO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
-            'C2H6O': {'iupac': 'Etanol', 'trivial': 'Alkohol etil', 'smiles': 'CCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
-            'C3H8O': {'iupac': '1-Propanol', 'trivial': 'n-Propanol', 'smiles': 'CCCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
-            'C3H8O_iso': {'iupac': '2-Propanol', 'trivial': 'Isopropanol', 'smiles': 'CC(C)O', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
-            'C4H10O': {'iupac': '1-Butanol', 'trivial': 'n-Butanol', 'smiles': 'CCCCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            'CH4OH': {'iupac': 'Metanol', 'trivial': 'Alkohol metil', 'smiles': 'CO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            'C2H6OH': {'iupac': 'Etanol', 'trivial': 'Alkohol etil', 'smiles': 'CCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            'C3H8OH': {'iupac': '1-Propanol', 'trivial': 'n-Propanol', 'smiles': 'CCCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            'C3H8OH_iso': {'iupac': '2-Propanol', 'trivial': 'Isopropanol', 'smiles': 'CC(C)O', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            'C4H10OH': {'iupac': '1-Butanol', 'trivial': 'n-Butanol', 'smiles': 'CCCCO', 'group': 'Alkohol', 'formula_pattern': 'R-OH'},
+            
             
             # Aldehydes
             'CH2O': {'iupac': 'Metanal', 'trivial': 'Formaldehida', 'smiles': 'C=O', 'group': 'Aldehid', 'formula_pattern': 'R-CHO'},
