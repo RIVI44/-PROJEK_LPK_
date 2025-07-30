@@ -402,7 +402,7 @@ def main():
     st.markdown("""
     <div style='text-align: center; padding: 2rem 0;'>
         <h1 style='color: #2E86AB; margin-bottom: 0.5rem;'>ChemID Pro</h1>
-        <p style='color: #666; font-size: 1.2rem;'>Identifikasi Senyawa Kimia dengan Teknologi Modern</p>
+        <p style='color: #666; font-size: 1.2rem;'>Identifikasi Gugus Fungsi & Tata Nama Senyawa Hidrokarbon dengan Teknologi Modern</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -439,13 +439,13 @@ def compound_identifier():
         if search_type == "formula":
             query = st.text_input(
                 "Masukkan rumus molekul:",
-                placeholder="Contoh: CH4, C2H6, C2H5OH",
+                placeholder="Contoh: CH4, C2H6, C2H5OH (Ditulis huruf Kapital)",
                 help="Masukkan rumus molekul standar"
             )
         else:
             query = st.text_input(
                 "Masukkan nama senyawa:",
-                placeholder="Contoh: metana, etanol, asam asetat",
+                placeholder="Contoh: metana, etanol, asam asetat (Ditulis huruf kecil atau Kapital)",
                 help="Masukkan nama IUPAC atau nama trivial"
             )
     
